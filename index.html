@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="slider-container">
+      <div class="slider-images">
+        <div class="slider-img">
+          <img src="image10.jpg" alt="1" />
+          <h1>Sukuna</h1>
+          <div class="details">
+            <h2>Sukuna</h2>
+            <p>King of Curses</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="image3.jpg" alt="2" />
+          <h1>Rengoku</h1>
+          <div class="details">
+            <h2>Rengoku</h2>
+            <p> Fire Hashira</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="image4.jpg" alt="3" />
+          <h1>Tangiro</h1>
+          <div class="details">
+            <h2>Tangiro</h2>
+            <p>The Sun Breather</p>
+          </div>
+        </div>
+        <div class="slider-img active">
+          <img src="image5.jpg" alt="4" />
+          <h1>Zenitsu</h1>
+          <div class="details">
+            <h2>Zenitsu</h2>
+            <p>The Thunder Breather</p>
+          </div>
+        </div>
+        
+        <div class="slider-img">
+            <img src="image13.jpg" alt="5" />
+            <h1>Yuta</h1>
+            <div class="details">
+              <h2>Yuta</h2>
+              <p>Special Grade Curse User </p>
+            </div>
+        </div>
+        <div class="slider-img">
+            <img src="image14.jpg" alt="6" />
+            <h1>Mei Mei</h1>
+            <div class="details">
+              <h2>Mei Mei</h2>
+              <p>Black Bird Manipulation Technique</p>
+            </div>
+        </div>
+          
+        <div class="slider-img">
+          <img src="image8.jpg" alt="7" />
+          <h1>Gojo</h1>
+          <div class="details">
+            <h2>Gojo</h2>
+            <p>Limitless Technique</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="image12.jpg" alt="8" />
+          <h1>Muzan</h1>
+          <div class="details">
+            <h2>Muzan</h2>
+            <p>The Demon King</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+    <script>
+      jQuery(document).ready(function ($) {
+        $(".slider-img").on("click", function () {
+          $(".slider-img").removeClass("active");
+          $(this).addClass("active");
+        });
+      });
+    </script>
+  </body>
+</html>
+
+
+
+
+
